@@ -1,0 +1,24 @@
+// Create a scanner to get input from the user
+import java.util.Scanner;
+
+public class RectangleAreaCalculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Ask the user for the rectangle's length
+        System.out.print("Enter the length of the rectangle: ");
+        double length = scanner.nextDouble();
+
+        // Ask the user for the rectangle's width
+        System.out.print("Enter the width of the rectangle: ");
+        double width = scanner.nextDouble();
+
+        // Calculate the area
+        double area = length * width;
+
+        // Show the calculated area
+        System.out.println("The area of the rectangle is: " + area);
+
+        scanner.close();
+    }
+}
